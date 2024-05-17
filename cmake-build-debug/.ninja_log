@@ -1,0 +1,21 @@
+# ninja log v5
+2	87	7376333583723384	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+6	98	7376333583832247	CMakeFiles/projetvpitie.dir/column.c.obj	ad6e5b8d4bd5d683
+98	207	7376333584869687	projetvpitie.exe	82ef0b421e5af321
+2	77	7376334566618082	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+77	170	7376334567495884	projetvpitie.exe	82ef0b421e5af321
+2	80	7376335326973247	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+81	172	7376335327854093	projetvpitie.exe	82ef0b421e5af321
+2	78	7376335947180111	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+78	173	7376335948080261	projetvpitie.exe	82ef0b421e5af321
+2	81	7376336885082477	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+82	179	7376336886020728	projetvpitie.exe	82ef0b421e5af321
+2	87	7376338071525380	CMakeFiles/projetvpitie.dir/column.c.obj	ad6e5b8d4bd5d683
+87	180	7376338072400334	projetvpitie.exe	82ef0b421e5af321
+3	91	7376345514431794	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+91	203	7376345515489304	projetvpitie.exe	82ef0b421e5af321
+2	111	7376353020686340	CMakeFiles/projetvpitie.dir/main.c.obj	90d835c170ac8249
+8	126	7376353020843842	CMakeFiles/projetvpitie.dir/column.c.obj	ad6e5b8d4bd5d683
+126	249	7376353021997661	projetvpitie.exe	82ef0b421e5af321
+2	110	7376357744938598	CMakeFiles/projetvpitie.dir/column.c.obj	ad6e5b8d4bd5d683
+111	229	7376357746054178	projetvpitie.exe	82ef0b421e5af321
