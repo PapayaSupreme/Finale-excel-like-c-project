@@ -123,7 +123,7 @@ void hardfill_col(COLUMN* col){
     printf("How much values do you want to hardfill ?");
     int nbval;
     scanf("%d", &nbval);
-    printf("Up to how much do you want the randomized values to go ?\n");
+    printf("Up to how much do you want \nthe randomized values to go ?\n");
     int random;
     scanf("%d", &random);
     srand(time(NULL));
