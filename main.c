@@ -8,6 +8,7 @@ int main() {
     printf("Welcome to the dataframe program\n");
     //create a dataframe
     dataframe df = NULL;
+    int columnsnb = 0;
     //create a list to keep track of the length of each column
     int firsttime = 1;
     printf("1 - Create x columns\n");
@@ -33,7 +34,7 @@ int main() {
             printf("Please enter a number between 1 and 13\n");
         }
     }
-    while (answer != 13) {
+    while (answer != 14) {
         if (firsttime == 1) {
             firsttime = 0;
         } else {
@@ -45,7 +46,7 @@ int main() {
             printf("6 - Hard-fill a column\n");
             printf("7 - Delete a column\n");
             printf("8 - Empty the dataframe\n");
-            printf("9 - Display the number of of occurences of a value\n");
+            printf("9 - Display the number of occurences of a value\n");
             printf("10 - Display the number of values greater than x\n");
             printf("11 - Display the number of values less than x\n");
             printf("12 - Made a mistake ? Rename a column\n");
@@ -61,6 +62,7 @@ int main() {
             char name[100];
             //create a list to store the columns adresses
             for (int i = 0; i < n; i++) {
+                columnsnb++;
                 //name is to be chosen by the user
                 printf("Enter the name of the column %d\n", i + 1);
                 scanf("%s", name);
@@ -174,39 +176,20 @@ int main() {
                 }
             }
         }else if (answer == 13){
-            //modify a value of the column
-            int coords = 2, value, row;
-            while(coords!= 1 && coords != 0){
-                printf("Type 0 to modify using index or 1 to modify using column's name\n");
-                scanf("%d", &coords);
-                if (coords != 1 && coords != 0){
-                    printf("Invalid answer\n");
-                }
-            }
+            int row, value;
             COLUMN *tmp = df;
-            if (coords == 0) {
-                int col, it = 0;
-                printf("Enter the column index of the cell you want to modify : \n");
-                scanf("%d", &col);
-                while ((col - 1) != it) {
-                    tmp = tmp->succ;
-                    it++;
-                }
-                printf("%d", it);
-            }else{
-                char name_col[100];
-                COLUMN *tmp = df;
-                printf("Enter the name of the column you want to modify\n");
-                scanf("%s", name_col);
-                while (tmp != NULL && strcmp(tmp->name, name_col) != 0){
-                    tmp = tmp->succ;
-                }
+            int col, it = 0;
+            printf("Enter the column index of the cell you want to modify : \n");
+            scanf("%d", &col);
+            while ((col - 1) != it) {
+                tmp = tmp->succ;
+                it++;
             }
-            printf("Enter the row of the cell you want to modify\n");
+            printf("Enter the row index of the cell you want to modify\n");
             scanf("%d", &row);
-            printf("Enter the new value\n");                // WIP WIP WIP WIP WIP WIP WIP
+            printf("Enter the new value\n");
             scanf("%d", &value);
-            modify_value(tmp, row, value);
+            modify_value(tmp, row-1, value);
         }
     }
     return 0;

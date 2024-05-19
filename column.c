@@ -219,5 +219,6 @@ void rename_col(COLUMN* col){
 }
 
 void modify_value(COLUMN* col, int row, int val){
-    col->values[row - 1] = val;
+    printf("%d\n", col->values[row]);
+    col->values[row] = val;
 }
